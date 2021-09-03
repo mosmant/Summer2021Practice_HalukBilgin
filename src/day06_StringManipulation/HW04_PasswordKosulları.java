@@ -1,6 +1,6 @@
 package day06_StringManipulation;
 
-public class HW04_PasswordKosulları {
+class HW04_PasswordKosullari {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -38,9 +38,9 @@ public class HW04_PasswordKosulları {
        
        if(numOfSembol>0 && numOfRakam>0 && numOfBuyukHarf>0 && numOfKucukHarf>0 ) {
            System.out.println("Tebrikler");
-           System.out.println("Password unun basarılı bir sekilde olusturulmustur");
+           System.out.println("Password unun basar?l? bir sekilde olusturulmustur");
        }else {
-           System.out.println("Sartlarınız malesef password olusturmaya yetmiyor");
+           System.out.println("Sartlar?n?z malesef password olusturmaya yetmiyor");
        }
    }
    

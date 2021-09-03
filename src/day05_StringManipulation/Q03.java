@@ -7,15 +7,15 @@ public class Q03 {
 	public static void main(String[] args) {
 		
 		/*
-	     * Bakýye öðrenme para çekme yatýrma ve çýkýþ iþlemlerinin olduðu bir bankamatik pr kodlayýnýz
+	     * bakiye ï¿½ï¿½renme para ï¿½ekme yatï¿½rma ve ï¿½ï¿½kï¿½ï¿½ iï¿½lemlerinin olduï¿½u bir bankamatik pr kodlayï¿½nï¿½z
 	     */
 	    
 	         System.out.println("*****************************");
-	         System.out.println("JAVA BANK ATM'ye Hoþgeldiniz...");
+	         System.out.println("JAVA BANK ATM'ye Hoï¿½geldiniz...");
 	         
-	         System.out.println("1. islem : bakýye sorma\n2. islem : para cekme\n3.islem : para yatirma\n4. islem : cýkýs");
+	         System.out.println("1. islem : bakï¿½ye sorma\n2. islem : para cekme\n3.islem : para yatirma\n4. islem : cï¿½kï¿½s");
 	         
-	         int bakýye =5000;
+	         int bakiye=5000;
 	         
 	         Scanner scanner=new Scanner(System.in);
 	         System.out.print("lutfen yapacaginiz islemi seciniz: ");
@@ -23,31 +23,31 @@ public class Q03 {
 	         
 	         switch (secim) {
 	        case 1: {
-	            System.out.println("bakýyeniz: " +bakýye);
+	            System.out.println("bakï¿½yeniz: " +bakiye);
 	            
 	            break;
 	        }
 	        case 2: {
-	            System.out.print("cekeceginiz miktarý giriniz : " );
+	            System.out.print("cekeceginiz miktarï¿½ giriniz : " );
 	            int cekilenMiktar=scanner.nextInt();
-	            if (cekilenMiktar>bakýye) {
-	                System.out.println("bakýyeniz yeterli degil");
+	            if (cekilenMiktar>bakiye) {
+	                System.out.println("bakï¿½yeniz yeterli degil");
 	                
 	            }else {
-	                bakýye-=cekilenMiktar;//bakýyeden cekilenMiktarý çýkardýk
-	                System.out.println("yeni bakýyeniz :"+bakýye);
+					bakiye-=cekilenMiktar;//bakï¿½yeden cekilenMiktarï¿½ ï¿½ï¿½kardï¿½k
+	                System.out.println("yeni bakï¿½yeniz :"+bakiye);
 	            }
 	            break;
 	        }
 	        case 3: {
-	            System.out.print("yatýracaginiz miktari giriniz: " );
+	            System.out.print("yatï¿½racaginiz miktari giriniz: " );
 	            int yatirilanmiktar=scanner.nextInt();
-	            bakýye+=yatirilanmiktar; //bakýyeye yatirilanmiktar ekledik
-	            System.out.println("yeni bakýyeniz :"+bakýye);
+				bakiye+=yatirilanmiktar; //bakï¿½yeye yatirilanmiktar ekledik
+	            System.out.println("yeni bakï¿½yeniz :"+bakiye);
 	            break;
 	        }
 	        case 4: {
-	            System.out.println("islemden cikisiniz yapýlýyor: " );
+	            System.out.println("islemden cikisiniz yapï¿½lï¿½yor: " );
 	            
 	            break;
 	        }

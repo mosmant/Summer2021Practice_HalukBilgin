@@ -6,67 +6,67 @@ public class Q10 {
 
 	public static void main(String[] args) {
 		/*
-        Kulanýcýdan aracýnýn hýzýný alýnýz
-        Trafik cezasýnýn deðerini hesaplayýn.
-            45 hýz sýnýrýdýr.
-            Eðer hýzýnýz 55-74 arasýnda ise:
-            Ceza 100 $'dýr.
-            Eðer hýzýnýz 75 - 84 arasýnda ise:
-            Ceza 150 $'dýr.
-            Eðer hýzýnýz 85 -94 arasýnda ise:
-            Ceza 320 $'dýr.
-            Eðer hýzýnýz 94'den daha fazla ise:
-            Ceza 500 $'dýr.
-            ve ayrýca,
-            Eðer sürücünün ehliyeti yoksa cezaya 200 $ eklenir.
-            Örn: Hýzýnýz 77 iken cezanýz 150$'dýr ama ehliyetiniz yoksa ceza 350 $ olur.
+        Kulanï¿½cï¿½dan aracï¿½nï¿½n hï¿½zï¿½nï¿½ alï¿½nï¿½z
+        Trafik cezasï¿½nï¿½n deï¿½erini hesaplayï¿½n.
+            45 hï¿½z sï¿½nï¿½rï¿½dï¿½r.
+            Eï¿½er hï¿½zï¿½nï¿½z 55-74 arasï¿½nda ise:
+            Ceza 100 $'dï¿½r.
+            Eï¿½er hï¿½zï¿½nï¿½z 75 - 84 arasï¿½nda ise:
+            Ceza 150 $'dï¿½r.
+            Eï¿½er hï¿½zï¿½nï¿½z 85 -94 arasï¿½nda ise:
+            Ceza 320 $'dï¿½r.
+            Eï¿½er hï¿½zï¿½nï¿½z 94'den daha fazla ise:
+            Ceza 500 $'dï¿½r.
+            ve ayrï¿½ca,
+            Eï¿½er sï¿½rï¿½cï¿½nï¿½n ehliyeti yoksa cezaya 200 $ eklenir.
+            ï¿½rn: Hï¿½zï¿½nï¿½z 77 iken cezanï¿½z 150$'dï¿½r ama ehliyetiniz yoksa ceza 350 $ olur.
 -----------------------------------------
-            Örn;
-            currentSpeed(Hýzýnýz) 87
-            ve isDriverLicenceAvailable(Ehliyeti var mý?) = true;
-            sonuç 320 olmalýdýr.
-            currentSpeed(Hýzýnýz) 65
-            ve isDriverLicenceAvailable(Ehliyeti var mý?) = false;
-            sonuç 300 olmalýdýr.
+            ï¿½rn;
+            currentSpeed(Hï¿½zï¿½nï¿½z) 87
+            ve isDriverLicenceAvailable(Ehliyeti var mï¿½?) = true;
+            sonuï¿½ 320 olmalï¿½dï¿½r.
+            currentSpeed(Hï¿½zï¿½nï¿½z) 65
+            ve isDriverLicenceAvailable(Ehliyeti var mï¿½?) = false;
+            sonuï¿½ 300 olmalï¿½dï¿½r.
         */
 
         Scanner scan = new Scanner(System.in);
-        System.out.print("Ehliyetiniz var ise 1 , yoksa 0 yazýnýz : ");
+        System.out.print("Ehliyetiniz var ise 1 , yoksa 0 yazï¿½nï¿½z : ");
 
         int ehliyet = scan.nextInt();
 
-        System.out.print("Hýzýnýzý giriniz : ");
+        System.out.print("Hï¿½zï¿½nï¿½zï¿½ giriniz : ");
 
-        int hýz = scan.nextInt();
+        int hiz = scan.nextInt();
 
         if (ehliyet == 1) {
-            if (hýz < 0) {
-                System.out.println("hatalý veri girdiniz");
-            } else if (hýz > 54 && hýz < 75) {
-                System.out.println("Ceza 100 $'dýr.");
-            } else if (hýz >= 75 && hýz < 85) {
-                System.out.println("Ceza 150 $'dýr.");
-            } else if (hýz >= 85 && hýz < 95) {
-                System.out.println("Ceza 320 $'dýr.");
-            } else if (hýz >= 95) {
-                System.out.println("Ceza 500 $'dýr.");
+            if (hiz < 0) {
+                System.out.println("hatalï¿½ veri girdiniz");
+            } else if (hiz > 54 && hiz < 75) {
+                System.out.println("Ceza 100 $'dï¿½r.");
+            } else if (hiz >= 75 && hiz < 85) {
+                System.out.println("Ceza 150 $'dï¿½r.");
+            } else if (hiz >= 85 && hiz < 95) {
+                System.out.println("Ceza 320 $'dï¿½r.");
+            } else if (hiz >= 95) {
+                System.out.println("Ceza 500 $'dï¿½r.");
             } else {
-                System.out.println("Hýz Sýnýrýnda seyahat ediyorsunuz hayýrlý yolculuklar.. ");
+                System.out.println("Hï¿½z Sï¿½nï¿½rï¿½nda seyahat ediyorsunuz hayï¿½rlï¿½ yolculuklar.. ");
             }
         } else if (ehliyet == 0) {
-            if (hýz > 54 && hýz < 75) {
-                System.out.println("Ceza 300 $'dýr.");
-            } else if (hýz >= 75 && hýz < 85) {
-                System.out.println("Ceza 350 $'dýr.");
-            } else if (hýz >= 85 && hýz < 95) {
-                System.out.println("Ceza 520 $'dýr.");
-            } else if (hýz >= 95) {
-                System.out.println("Ceza 700 $'dýr.");
+            if (hiz > 54 && hiz < 75) {
+                System.out.println("Ceza 300 $'dï¿½r.");
+            } else if (hiz >= 75 && hiz < 85) {
+                System.out.println("Ceza 350 $'dï¿½r.");
+            } else if (hiz >= 85 && hiz < 95) {
+                System.out.println("Ceza 520 $'dï¿½r.");
+            } else if (hiz >= 95) {
+                System.out.println("Ceza 700 $'dï¿½r.");
             } else {
-                System.out.println("Sadece Ehliyetsiz kullanýmdan dolayý cezanýz  200 $'dýr. ");
+                System.out.println("Sadece Ehliyetsiz kullanï¿½mdan dolayï¿½ cezanï¿½z  200 $'dï¿½r. ");
             }
         } else {
-            System.out.println("Lütfen Geçerli Bir deðer Giriniz!");
+            System.out.println("Lï¿½tfen Geï¿½erli Bir deï¿½er Giriniz!");
         }
         scan.close();
 
