@@ -56,7 +56,7 @@ public class Runner {
 	public static int secenek;
 	public static void main(String[] args) {
 		
-		M01 objm = new M01();
+		Met01 objm = new Met01();
 		
 		
 		do {

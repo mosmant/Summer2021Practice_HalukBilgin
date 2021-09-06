@@ -60,7 +60,7 @@ public class OyunGirisi {
 		kutuNumaram=scan.nextInt();
 		paraMiktarim=paraListesi.get(kutuNumaram-1);
 		
-		kutular.secilenKutuyuKutularListesindenKald?r(kutuNumaram);
+		kutular.secilenKutuyuKutularListesindenKaldir(kutuNumaram);
 		kutuSecmeActirma();
 		
 		}

@@ -7,7 +7,7 @@ import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class M01 extends V01{
+public class Met01 extends V01{
 	Scanner scan = new Scanner (System.in);
 	
 	CopyOnWriteArrayList<V01> urun = new CopyOnWriteArrayList<>();
