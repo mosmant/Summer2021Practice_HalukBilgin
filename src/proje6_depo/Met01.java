@@ -10,7 +10,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Met01 extends V01{
 	Scanner scan = new Scanner (System.in);
 	
-	CopyOnWriteArrayList<V01> urun = new CopyOnWriteArrayList<>();
+	List<V01> urun = new ArrayList<>();
 	//HashMap< Integer,String> urunmap= new HashMap<>();
 	
 	String secim;

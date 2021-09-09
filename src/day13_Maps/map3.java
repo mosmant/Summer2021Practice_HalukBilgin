@@ -13,7 +13,7 @@ public class map3 {
 		hm1.put(101, "Kemal Yýldýz"); // ayný key kullanýldýðýnda eski kaydýn üzerine yazar.
 		System.out.println(hm1);
 		
-		hm1.put(104, "veli Can"); //tekrarlý kye izin vermez ancak tekrarlý value ya izin verir.
+		hm1.put(104, "veli Can"); //tekrarlý kEye izin vermez ancak tekrarlý value ya izin verir.
 		System.out.println(hm1);
 		
 		hm1.put(null, "merve aslan");

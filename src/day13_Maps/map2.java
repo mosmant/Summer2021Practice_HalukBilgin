@@ -17,7 +17,7 @@ public class map2 {
         // eger belirtilen numara kayýtlý deðilse kaydýnýz eklenmiþtir desin.
         Scanner scan=new Scanner(System.in);
         
-        System.out.println("numara giriniz");
+        /* System.out.println("numara giriniz");
         int numara=scan.nextInt();
         scan.nextLine();
         
@@ -31,14 +31,20 @@ public class map2 {
         }else {
             System.out.println("Böyle bir kayýt mevcuttur : Kayýt "+
         ogrenciBilgileri.putIfAbsent(numara,bilgi)+" kiþisine aittir.");
-        }
+        }*/ //==> burada diðer souryu çömek comment e aldýk
         
         // Bir numara girildiðinde o kiþiye ait sýnýf bilgisini bize göstersin.
         //eðer kayýt yok ise böyle bir kayýt yok mesajý versin
         
         
         
+        System.out.println("numara giriniz");
+        int numara=scan.nextInt();
         
+        ogrenciBilgileri.get(numara);     				// input :632 output:"Can Mert -6/C" (syso icine alinsaydi.)
+        
+        System.out.println(ogrenciBilgileri.get(numara).substring(ogrenciBilgileri.get(numara).indexOf("-")+1));
+        System.out.println(ogrenciBilgileri.get(numara).substring(ogrenciBilgileri.get(numara).lastIndexOf("-")+1));
         
         
         
